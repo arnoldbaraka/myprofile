@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Arnold Baraka — Futuristic DevSecOps Metaverse</title>
+<meta name="description" content="Arnold Baraka — DevSecOps masterclasses, consultancy, digital health, public sector and metaverse portfolio."/>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="scene">
+  <nav class="nav">
+    <div class="brand">ARNOLD <span class="neon">BARAKA</span></div>
+    <div class="controls">
+      <select id="langSelect" aria-label="Select language"></select>
+      <button id="themeToggle" title="Toggle theme">🌓</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-left">
+      <h1 id="title">DevSecOps · Cloud · Digital Health</h1>
+      <p id="lead">I build secure, scalable cloud platforms, teach teams to ship safely, and consult across digital health & public sector.</p>
+      <div class="cta">
+        <a href="#offerings" class="btn">Explore Offerings</a>
+        <button class="btn ghost" id="playVideoBtn">Watch Vision Video ▶</button>
+      </div>
+      <div class="bubbles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="card">
+        <video id="heroVideo" poster="" muted loop playsinline>
+          <source src="assets/Arno.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">Click ▶</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" id="main">
+    <section id="offerings" class="panel">
+      <h2 id="offeringsTitle">Offerings</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3>DevOps & Platform Engineering</h3>
+          <p>GitOps, Flux CD, Kubernetes, Docker, observability, infra as code.</p>
+        </article>
+        <article class="tile">
+          <h3>DevSecOps & Security</h3>
+          <p>Secure CI/CD, threat modelling, secrets management, cloud hardening.</p>
+        </article>
+        <article class="tile">
+          <h3>Masterclasses</h3>
+          <p>Hands-on Kubernetes, Secure Pipelines, Observability & SRE workshops.</p>
+        </article>
+        <article class="tile">
+          <h3>Consultancy</h3>
+          <p>Digital health, public sector architecture, compliance, program delivery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="panel">
+      <h2 id="experienceTitle">Experience Highlights</h2>
+      <div class="timeline">
+        <div class="event">
+          <h4>DevSecOps Engineer — Safaricom Plc</h4>
+          <time>September — Present</time>
+          <p>Automated AWS infra, CI/CD pipelines (FluxCD, GitLab), monitoring (Grafana, SigNoz, Zabbix, Log AI).</p>
+        </div>
+        <div class="event">
+          <h4>Cloud Infra Engineer & Systems Admin (Intern) — Safaricom Plc</h4>
+          <time>17 May 2023 – 22 Feb 2024</time>
+          <p>Linux/Windows admin, VMware, Kubernetes, Big Data collaboration (Hadoop, Spark).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="panel">
+      <h2 id="classesTitle">Masterclasses</h2>
+      <ul>
+        <li>Kubernetes for Engineers — 2-day hands-on</li>
+        <li>Secure CI/CD — pipeline hardening & secrets</li>
+        <li>Observability & SRE — metrics, tracing, alerts</li>
+        <li>Cloud Foundations — secure AWS, IAM, cost control</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2 id="contactTitle">Contact</h2>
+      <p>Phone: +254 733 368974 · Email: <a href="mailto:arnold@example.com">arnold@example.com</a></p>
+      <p>References available on request.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Arnold Baraka — Futuristic Metaverse Portfolio</p>
+  </footer>
+</div>
+
+<!-- Video modal -->
+<div id="videoModal" class="modal" aria-hidden="true" role="dialog" aria-label="Vision video">
+  <div class="modal-inner">
+    <button id="closeModal" class="modal-close" aria-label="Close video">✕</button>
+    <video id="modalVideo" controls playsinline>
+      <source src="assets/Arno.mp4" type="video/mp4">
+      Your browser does not support embedded videos.
+    </video>
+  </div>
+</div>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
